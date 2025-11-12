@@ -1,6 +1,7 @@
 package StepDefs;
 
 import Commom.HeaderSection;
+import Commom.LoginPage;
 import Commom.MyAccountPage;
 import Commom.RegisterPage;
 import com.github.javafaker.Faker;
@@ -21,6 +22,7 @@ public class StepDefinitions {
     HeaderSection headerPage = new HeaderSection(page);
     RegisterPage registerPage = new RegisterPage(page);
     MyAccountPage myAccountPage = new MyAccountPage(page);
+    LoginPage loginPage = new LoginPage(page);
 
 
     @Given("navigate to URL {string}")
@@ -62,6 +64,8 @@ public class StepDefinitions {
     public void click_on_register_button() {
         registerPage.clickContinue();
     }
+
+
     @Then("the user registration should be successsful")
     public void the_user_registration_should_be_successsful() throws InterruptedException {
         boolean registrationSuccessful = registerPage.validateAccountCreationSuccessful();
@@ -72,6 +76,7 @@ public class StepDefinitions {
     public void click_on_continue_button_in_resgistration_page() {
         registerPage.clickContinueinAccountSuccesfulPage();
     }
+
     @Then("the user should get navigaetd to MyAccount Page")
     public void the_user_should_get_navigaetd_to_my_account_page() {
        boolean myAccountDisplayed =  myAccountPage.myAccountPageDisplayed();
@@ -79,6 +84,19 @@ public class StepDefinitions {
 
         String currentPage = headerPage.getCurrentPage();
         Assert.assertEquals("Current Page is MyAccount Page", currentPage, "Account");
+
+        String title = headerPage.getPageTitle();
+        Assert.assertEquals("Current Page Title is MyAccount", title, "My Account");
+    }
+
+    @Given("click Login button")
+    public void click_login_button() {
+        headerPage.clickLogin();
+    }
+
+    @When("login with the credentials {string} and {string}")
+    public void login_with_the_credentials_and(String email, String password) {
+        loginPage.login(email, password);
     }
 
 }

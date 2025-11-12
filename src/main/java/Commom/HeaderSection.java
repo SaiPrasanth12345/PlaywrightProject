@@ -30,7 +30,7 @@ public class HeaderSection {
         //Locator myAccountBtn = page.locator(myAccount);
 
         //click the visible myAccount
-        Locator myAccountBtn = page.locator("//span[contains(.,'My account')] >> visible=true");
+        Locator myAccountBtn = page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("My account"));
         myAccountBtn.hover();
 
         // login click
@@ -49,6 +49,12 @@ public class HeaderSection {
         String currentPage = page.locator(" //li[@aria-current='page']").textContent();
         System.out.println("Current Page is : " + currentPage);
         return currentPage;
+    }
+
+    public String getPageTitle() {
+        String currentPageTitle = page.title();
+        System.out.println("Current Page Title is : " + currentPageTitle);
+        return currentPageTitle;
     }
 
 }
