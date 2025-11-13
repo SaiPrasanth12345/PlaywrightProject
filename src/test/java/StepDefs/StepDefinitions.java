@@ -17,7 +17,7 @@ import java.time.Duration;
 
 public class StepDefinitions {
 
-    Scenario scenario = DriverInstansiation.scenario;
+    Scenario scenario = CucumberHooks.scenario;
     Page page = DriverInstansiation.page;
     HeaderSection headerPage = new HeaderSection(page);
     RegisterPage registerPage = new RegisterPage(page);

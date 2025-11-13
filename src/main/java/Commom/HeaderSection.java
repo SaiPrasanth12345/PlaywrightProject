@@ -27,8 +27,6 @@ public class HeaderSection {
     }
 
     public void clickLogin() {
-        //Locator myAccountBtn = page.locator(myAccount);
-
         //click the visible myAccount
         Locator myAccountBtn = page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("My account"));
         myAccountBtn.hover();

@@ -1,3 +1,4 @@
+@allTCRun
 Feature: Login Feature
 
   @negative @register
@@ -27,6 +28,7 @@ Scenario: To perform successful registration for the user
     Examples:
     |email               |password|
     |koushik350@gmail.com|Pass123$|
+    |abcdef@ghijkl.com   |ABCDEFG |
 
 
 

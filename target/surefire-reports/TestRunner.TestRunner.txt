@@ -1,4 +1,11 @@
 -------------------------------------------------------------------------------
 Test set: TestRunner.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 43.32 s -- in TestRunner.TestRunner
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 73.69 s <<< FAILURE! -- in TestRunner.TestRunner
+Login Feature.To perform successful login for the user #2 -- Time elapsed: 20.42 s <<< FAILURE!
+java.lang.AssertionError: My Account Page is displayed
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at StepDefs.StepDefinitions.the_user_should_get_navigaetd_to_my_account_page(StepDefinitions.java:83)
+	at ✽.the user should get navigaetd to MyAccount Page(file:///H:/Prasanth/IdeaProjects/PlaywrightSimpleProject/PlaywrightProject/src/test/resources/login.feature:26)
+
