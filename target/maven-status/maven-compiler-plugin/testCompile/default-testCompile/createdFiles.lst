@@ -1,4 +1,4 @@
-StepDefs\DriverInstansiation.class
 StepDefs\StepDefinitions.class
-StepDefs\CucumberHooks.class
 TestRunner\TestRunner.class
+StepDefs\DriverInstansiation.class
+StepDefs\CucumberHooks.class

@@ -27,12 +27,15 @@ public class CucumberHooks {
 
     @AfterStep
     public void afterStep() {
+        scenario.log("After Step: " + scenario.getName());
         driverInstansiation.takeScreenshot(scenario);
     }
 
     @After
     //public void teardown(Scenario scenario, TestCaseFinished event) {
     public void teardown(Scenario scenario) throws IOException {
+        scenario.log("After Executing Scenario: " + scenario.getName());
+
         if(scenario.isFailed()) {
             driverInstansiation.takeFullPageScreenshot(scenario);
 
@@ -42,7 +45,7 @@ public class CucumberHooks {
             //error.printStackTrace();
         }
 
-        scenario.attach(Files.readAllBytes(driverInstansiation.getVideoPath()), "video/webm", scenario.getName()+"- Video");
+        //scenario.attach(Files.readAllBytes(driverInstansiation.getVideoPath()), "video/webm", scenario.getName()+"- Video");
 
         DriverInstansiation.page.close();
         DriverInstansiation.browser.close();

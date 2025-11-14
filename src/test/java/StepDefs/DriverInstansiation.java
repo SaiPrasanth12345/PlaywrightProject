@@ -55,17 +55,17 @@ public class DriverInstansiation {
 
     public void takeScreenshot(Scenario scenario) {
         byte[] scrscnht= page.screenshot();
-        scenario.attach(scrscnht, "img/png", scenario.getName() + " - Image");
+        scenario.attach(scrscnht, "image/png", scenario.getName() + " - Image");
     }
 
     public void takeFullPageScreenshot(Scenario scenario) {
         byte[] scrscnht= page.screenshot(new Page.ScreenshotOptions().setFullPage(true));
-        scenario.attach(scrscnht, "img/png", scenario.getName() + " - Screenshot");
+        scenario.attach(scrscnht, "image/png", scenario.getName() + " - Screenshot");
     }
 
     public void takLocatorScreenshot(Locator locator , Scenario scenario) {
         byte[] locatorScrnscht = locator.screenshot();
-        scenario.attach(locatorScrnscht, "img/png", scenario.getName() + " - Locator Screenshot");
+        scenario.attach(locatorScrnscht, "image/png", scenario.getName() + " - Locator Screenshot");
     }
 
     public Path getVideoPath() {
