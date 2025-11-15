@@ -68,6 +68,11 @@ public class DriverInstansiation {
         scenario.attach(locatorScrnscht, "image/png", scenario.getName() + " - Locator Screenshot");
     }
 
+    public void logInfo(String text){
+        Scenario scenario = CucumberHooks.scenario;
+        scenario.log(text);
+    }
+
     public Path getVideoPath() {
         Path path = null;
         Video video = context.pages().getFirst().video();

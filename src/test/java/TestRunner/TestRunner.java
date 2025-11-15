@@ -10,7 +10,8 @@ import io.cucumber.junit.CucumberOptions;
                    glue = "StepDefs",
                    tags = "@LoginUser",
                    plugin = {"pretty","json:target/cucumber.json", "html:target/html-reports/report.html",
-                                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"})
+                                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+                                "com.aventstack.chaintest.plugins.ChainTestCucumberListener:"})
 
 public class TestRunner {
 
