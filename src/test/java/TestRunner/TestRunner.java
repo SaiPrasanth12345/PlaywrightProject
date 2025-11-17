@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions ( features = "src/test/resources/features",
                    glue = "StepDefs",
-                   tags = "@LoginUser",
+                   tags = "@allTCRun",
                    plugin = {"pretty","json:target/cucumber.json", "html:target/html-reports/report.html",
                                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
                                 "com.aventstack.chaintest.plugins.ChainTestCucumberListener:"})

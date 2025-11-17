@@ -31,7 +31,7 @@
                   <tr>
                     <td>
                       <span class="bg-failed" style="margin-right:10px;padding:0px 5px;">FAILED</span>
-                      <span style="">16 Nov 2025, 3:09:15 am &middot; 1m 29s</span>
+                      <span style="">17 Nov 2025, 10:09:16 am &middot; 1m 7s</span>
                     </td>
                   </tr>
                 </table>
@@ -52,15 +52,15 @@
 	            <tr>
 	              <td width="100" style="padding:30px 40px 20px;">
 	                <p style="font-weight:500;color:#7E7E7E;margin:0;">Tests</p>
-	                <h1 style="font-size:34px;">2</h1>
+	                <h1 style="font-size:34px;">4</h1>
 	              </td>
                 <td width="100" style="padding:30px 40px 20px;">
 	                <p style="font-weight:500;color:#7E7E7E;margin:0;color:#79B530">Passed</p>
-	                <h1 style="font-size:34px;">1</h1>
+	                <h1 style="font-size:34px;">0</h1>
 	              </td>
                 <td width="100" style="padding:30px 40px 20px;">
 	                <p style="font-weight:500;color:#7E7E7E;margin:0;color:#e64b5d">Failed</p>
-	                <h1 style="font-size:34px;">1</h1>
+	                <h1 style="font-size:34px;">4</h1>
 	              </td>
                 <td width="100" style="padding:30px 40px 20px;">
 	                <p style="font-weight:500;color:#7E7E7E;margin:0;color:#e6e04c">Skipped</p>
@@ -95,9 +95,9 @@
                   </tr>
                   <tr style="height:10px;"></tr>
                   <tr>
-                    <td width="350">@LoginUser</td>
+                    <td width="350">@register</td>
                       <td width="23"></td>
-                      <td style="" width="60">1</td>
+                      <td style="" width="60">0</td>
                       <td class="padding" width="10"></td>
                       <td style="" width="60">1</td>
                       <td class="padding" width="10"></td>
@@ -105,9 +105,39 @@
                   </tr>
                   <tr style="height:10px;"></tr>
                   <tr>
+                    <td width="350">@negative</td>
+                      <td width="23"></td>
+                      <td style="" width="60">0</td>
+                      <td class="padding" width="10"></td>
+                      <td style="" width="60">1</td>
+                      <td class="padding" width="10"></td>
+                      <td style="" width="60">0</td>
+                  </tr>
+                  <tr style="height:10px;"></tr>
+                  <tr>
+                    <td width="350">@LoginUser</td>
+                      <td width="23"></td>
+                      <td style="" width="60">0</td>
+                      <td class="padding" width="10"></td>
+                      <td style="" width="60">2</td>
+                      <td class="padding" width="10"></td>
+                      <td style="" width="60">0</td>
+                  </tr>
+                  <tr style="height:10px;"></tr>
+                  <tr>
                     <td width="350">@allTCRun</td>
                       <td width="23"></td>
-                      <td style="" width="60">1</td>
+                      <td style="" width="60">0</td>
+                      <td class="padding" width="10"></td>
+                      <td style="" width="60">4</td>
+                      <td class="padding" width="10"></td>
+                      <td style="" width="60">0</td>
+                  </tr>
+                  <tr style="height:10px;"></tr>
+                  <tr>
+                    <td width="350">@registerUser</td>
+                      <td width="23"></td>
+                      <td style="" width="60">0</td>
                       <td class="padding" width="10"></td>
                       <td style="" width="60">1</td>
                       <td class="padding" width="10"></td>
@@ -117,9 +147,9 @@
                   <tr>
                     <td width="350">@positive</td>
                       <td width="23"></td>
-                      <td style="" width="60">1</td>
+                      <td style="" width="60">0</td>
                       <td class="padding" width="10"></td>
-                      <td style="" width="60">1</td>
+                      <td style="" width="60">3</td>
                       <td class="padding" width="10"></td>
                       <td style="" width="60">0</td>
                   </tr>
@@ -144,40 +174,77 @@
                       <p class="text-failed" style="font-size:14px;font-weight:500;margin:0;margin-bottom:5px;">
                         Feature: Login Feature
                       <p style="font-size:12px;margin:0;">
-                        <span>16 Nov 2025, 3:09:16 am / 1m 18s</span>
+                        <span>17 Nov 2025, 10:10:22 am / 83ms</span>
                       </p>
                     </td>
                   </tr>
                   <tr>
-                    <td width="650px" class="bg-passed" style="padding:7px 10px;">
+                    <td width="650px" class="bg-failed" style="padding:7px 10px;">
                       <p style="font-size:13px;margin:0;">
                         Scenario Outline: To perform successful login for the user
                       </p>
                     </td>
                   </tr>
                   <tr>
-                    <td width="650px" class="bg-passed" style="padding:7px 20px;">
+                    <td width="650px" class="bg-failed" style="padding:7px 20px;">
                       <p style="font-size:13px;margin:0;">
                         Given navigate to URL "https://ecommerce-playground.lambdatest.io/"
+<pre>com.microsoft.playwright.PlaywrightException: Object doesn't exist: request@fd0242b3a604da5da3af5bd03e235509
+	at com.microsoft.playwright.impl.Connection.getExistingObject(Connection.java:195)
+	at com.microsoft.playwright.impl.BrowserContextImpl.handleEvent(BrowserContextImpl.java:744)
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:295)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.navigateImpl(FrameImpl.java:419)
+	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:930)
+	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:43)
+	at com.microsoft.playwright.Page.navigate(Page.java:5491)
+	at Commom.HeaderSection.launchURL(HeaderSection.java:20)
+	at StepDefs.StepDefinitions.navigate_to_url(StepDefinitions.java:31)
+	at ✽.navigate to URL "https://ecommerce-playground.lambdatest.io/"(file:///H:/Prasanth/IdeaProjects/PlaywrightSimpleProject/PlaywrightProject/src/test/resources/features/login.feature:6)
+</pre>
                       </p>
                     </td>
                   </tr>
                   <tr>
-                    <td width="650px" class="bg-passed" style="padding:7px 20px;">
+                    <td width="650px" class="bg-failed" style="padding:7px 20px;">
+                      <p style="font-size:13px;margin:0;">
+                        Hook: AFTER_STEP
+<pre>com.microsoft.playwright.PlaywrightException: Object doesn't exist: request@d0cbf5e9f659e1d687272893b5b6fefc
+	at com.microsoft.playwright.impl.Connection.getExistingObject(Connection.java:195)
+	at com.microsoft.playwright.impl.BrowserContextImpl.handleEvent(BrowserContextImpl.java:744)
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:295)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.PageImpl.screenshotImpl(PageImpl.java:1207)
+	at com.microsoft.playwright.impl.PageImpl.screenshot(PageImpl.java:1162)
+	at com.microsoft.playwright.Page.screenshot(Page.java:6756)
+	at StepDefs.DriverInstansiation.takeScreenshot(DriverInstansiation.java:57)
+	at StepDefs.CucumberHooks.afterStep(CucumberHooks.java:31)
+</pre>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="650px" class="bg-skipped" style="padding:7px 20px;">
                       <p style="font-size:13px;margin:0;">
                         And click Login button
                       </p>
                     </td>
                   </tr>
                   <tr>
-                    <td width="650px" class="bg-passed" style="padding:7px 20px;">
+                    <td width="650px" class="bg-skipped" style="padding:7px 20px;">
                       <p style="font-size:13px;margin:0;">
                         When login with the credentials "koushik350@gmail.com" and "Pass123$"
                       </p>
                     </td>
                   </tr>
                   <tr>
-                    <td width="650px" class="bg-passed" style="padding:7px 20px;">
+                    <td width="650px" class="bg-skipped" style="padding:7px 20px;">
                       <p style="font-size:13px;margin:0;">
                         Then the user should get navigaetd to MyAccount Page
                       </p>
@@ -220,7 +287,202 @@
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.assertTrue(Assert.java:42)
 	at StepDefs.StepDefinitions.the_user_should_get_navigaetd_to_my_account_page(StepDefinitions.java:88)
-	at ✽.the user should get navigaetd to MyAccount Page(file:///H:/Prasanth/IdeaProjects/PlaywrightSimpleProject/PlaywrightProject/src/test/resources/features/login.feature:26)
+	at ✽.the user should get navigaetd to MyAccount Page(file:///H:/Prasanth/IdeaProjects/PlaywrightSimpleProject/PlaywrightProject/src/test/resources/features/login.feature:9)
+</pre>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr><td style="height:10px"></td></tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          <table width="650">
+            <tr>
+              <td bgcolor="#FFF" style="padding:10px 20px;">
+                <table>
+                  <tr>
+                    <td width="650px" style="padding:10px;">
+                      <p class="text-failed" style="font-size:14px;font-weight:500;margin:0;margin-bottom:5px;">
+                        Feature: Register Feature
+                      <p style="font-size:12px;margin:0;">
+                        <span>17 Nov 2025, 10:10:22 am / 150ms</span>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="650px" class="bg-failed" style="padding:7px 10px;">
+                      <p style="font-size:13px;margin:0;">
+                        Scenario: To validate that Error message is displayed when performing register with Mandatory fields as empty
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="650px" class="bg-failed" style="padding:7px 20px;">
+                      <p style="font-size:13px;margin:0;">
+                        Given navigate to URL "https://ecommerce-playground.lambdatest.io/"
+<pre>com.microsoft.playwright.PlaywrightException: Object doesn't exist: artifact@2f899e84ec1d86e1f3eb2a0d80bb06f6
+	at com.microsoft.playwright.impl.Connection.getExistingObject(Connection.java:195)
+	at com.microsoft.playwright.impl.PageImpl.handleEvent(PageImpl.java:224)
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:295)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.navigateImpl(FrameImpl.java:419)
+	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:930)
+	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:43)
+	at com.microsoft.playwright.Page.navigate(Page.java:5491)
+	at Commom.HeaderSection.launchURL(HeaderSection.java:20)
+	at StepDefs.StepDefinitions.navigate_to_url(StepDefinitions.java:31)
+	at ✽.navigate to URL "https://ecommerce-playground.lambdatest.io/"(file:///H:/Prasanth/IdeaProjects/PlaywrightSimpleProject/PlaywrightProject/src/test/resources/features/register.feature:6)
+</pre>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="650px" class="bg-skipped" style="padding:7px 20px;">
+                      <p style="font-size:13px;margin:0;">
+                        And click Register
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="650px" class="bg-skipped" style="padding:7px 20px;">
+                      <p style="font-size:13px;margin:0;">
+                        When click Continue button with empty mandatory fields
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="650px" class="bg-skipped" style="padding:7px 20px;">
+                      <p style="font-size:13px;margin:0;">
+                        Then Error message should get displayed
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="650px" class="bg-failed" style="padding:7px 20px;">
+                      <p style="font-size:13px;margin:0;">
+                        Hook: AFTER
+<pre>com.microsoft.playwright.PlaywrightException: Cannot find command to respond: 5
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:246)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.PageImpl.screenshotImpl(PageImpl.java:1207)
+	at com.microsoft.playwright.impl.PageImpl.screenshot(PageImpl.java:1162)
+	at StepDefs.DriverInstansiation.takeFullPageScreenshot(DriverInstansiation.java:62)
+	at StepDefs.CucumberHooks.teardown(CucumberHooks.java:40)
+</pre>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr><td style="height:10px"></td></tr>
+                  <tr>
+                    <td width="650px" class="bg-failed" style="padding:7px 10px;">
+                      <p style="font-size:13px;margin:0;">
+                        Scenario: To perform successful registration for the user
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="650px" class="bg-failed" style="padding:7px 20px;">
+                      <p style="font-size:13px;margin:0;">
+                        Given navigate to URL "https://ecommerce-playground.lambdatest.io/"
+<pre>com.microsoft.playwright.PlaywrightException: Playwright connection closed
+	at com.microsoft.playwright.impl.PipeTransport.poll(PipeTransport.java:65)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:208)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.navigateImpl(FrameImpl.java:419)
+	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:930)
+	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:43)
+	at com.microsoft.playwright.Page.navigate(Page.java:5491)
+	at Commom.HeaderSection.launchURL(HeaderSection.java:20)
+	at StepDefs.StepDefinitions.navigate_to_url(StepDefinitions.java:31)
+	at ✽.navigate to URL "https://ecommerce-playground.lambdatest.io/"(file:///H:/Prasanth/IdeaProjects/PlaywrightSimpleProject/PlaywrightProject/src/test/resources/features/register.feature:13)
+</pre>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="650px" class="bg-failed" style="padding:7px 20px;">
+                      <p style="font-size:13px;margin:0;">
+                        Hook: AFTER_STEP
+<pre>com.microsoft.playwright.PlaywrightException: Playwright connection closed
+	at com.microsoft.playwright.impl.PipeTransport.send(PipeTransport.java:50)
+	at com.microsoft.playwright.impl.Connection.internalSendMessage(Connection.java:171)
+	at com.microsoft.playwright.impl.Connection.sendMessageAsync(Connection.java:135)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.PageImpl.screenshotImpl(PageImpl.java:1207)
+	at com.microsoft.playwright.impl.PageImpl.screenshot(PageImpl.java:1162)
+	at com.microsoft.playwright.Page.screenshot(Page.java:6756)
+	at StepDefs.DriverInstansiation.takeScreenshot(DriverInstansiation.java:57)
+	at StepDefs.CucumberHooks.afterStep(CucumberHooks.java:31)
+</pre>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="650px" class="bg-skipped" style="padding:7px 20px;">
+                      <p style="font-size:13px;margin:0;">
+                        And click Register
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="650px" class="bg-skipped" style="padding:7px 20px;">
+                      <p style="font-size:13px;margin:0;">
+                        When fill all the fields with the respective details
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="650px" class="bg-skipped" style="padding:7px 20px;">
+                      <p style="font-size:13px;margin:0;">
+                        And click on Register button
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="650px" class="bg-skipped" style="padding:7px 20px;">
+                      <p style="font-size:13px;margin:0;">
+                        Then the user registration should be successsful
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="650px" class="bg-skipped" style="padding:7px 20px;">
+                      <p style="font-size:13px;margin:0;">
+                        And click on Continue button in resgistration page
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="650px" class="bg-skipped" style="padding:7px 20px;">
+                      <p style="font-size:13px;margin:0;">
+                        Then the user should get navigaetd to MyAccount Page
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="650px" class="bg-failed" style="padding:7px 20px;">
+                      <p style="font-size:13px;margin:0;">
+                        Hook: AFTER
+<pre>com.microsoft.playwright.PlaywrightException: Playwright connection closed
+	at com.microsoft.playwright.impl.PipeTransport.send(PipeTransport.java:50)
+	at com.microsoft.playwright.impl.Connection.internalSendMessage(Connection.java:171)
+	at com.microsoft.playwright.impl.Connection.sendMessageAsync(Connection.java:135)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.PageImpl.screenshotImpl(PageImpl.java:1207)
+	at com.microsoft.playwright.impl.PageImpl.screenshot(PageImpl.java:1162)
+	at StepDefs.DriverInstansiation.takeFullPageScreenshot(DriverInstansiation.java:62)
+	at StepDefs.CucumberHooks.teardown(CucumberHooks.java:40)
 </pre>
                       </p>
                     </td>

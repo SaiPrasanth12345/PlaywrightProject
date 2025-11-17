@@ -1,0 +1,73 @@
+-------------------------------------------------------------------------------
+Test set: Register Feature
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 46.62 s <<< FAILURE! -- in Register Feature
+Register Feature.To validate that Error message is displayed when performing register with Mandatory fields as empty -- Time elapsed: 33.81 s <<< ERROR!
+com.microsoft.playwright.PlaywrightException: Object doesn't exist: artifact@2f899e84ec1d86e1f3eb2a0d80bb06f6
+	at com.microsoft.playwright.impl.Connection.getExistingObject(Connection.java:195)
+	at com.microsoft.playwright.impl.PageImpl.handleEvent(PageImpl.java:224)
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:295)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.navigateImpl(FrameImpl.java:419)
+	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:930)
+	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:43)
+	at com.microsoft.playwright.Page.navigate(Page.java:5491)
+	at Commom.HeaderSection.launchURL(HeaderSection.java:20)
+	at StepDefs.StepDefinitions.navigate_to_url(StepDefinitions.java:31)
+	at ✽.navigate to URL "https://ecommerce-playground.lambdatest.io/"(file:///H:/Prasanth/IdeaProjects/PlaywrightSimpleProject/PlaywrightProject/src/test/resources/features/register.feature:6)
+
+Register Feature.To validate that Error message is displayed when performing register with Mandatory fields as empty -- Time elapsed: 0 s <<< ERROR!
+com.microsoft.playwright.PlaywrightException: Cannot find command to respond: 5
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:246)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.PageImpl.screenshotImpl(PageImpl.java:1207)
+	at com.microsoft.playwright.impl.PageImpl.screenshot(PageImpl.java:1162)
+	at StepDefs.DriverInstansiation.takeFullPageScreenshot(DriverInstansiation.java:62)
+	at StepDefs.CucumberHooks.teardown(CucumberHooks.java:40)
+
+Register Feature.To perform successful registration for the user -- Time elapsed: 12.80 s <<< ERROR!
+com.microsoft.playwright.PlaywrightException: Playwright connection closed
+	at com.microsoft.playwright.impl.PipeTransport.poll(PipeTransport.java:65)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:208)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.navigateImpl(FrameImpl.java:419)
+	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:930)
+	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:43)
+	at com.microsoft.playwright.Page.navigate(Page.java:5491)
+	at Commom.HeaderSection.launchURL(HeaderSection.java:20)
+	at StepDefs.StepDefinitions.navigate_to_url(StepDefinitions.java:31)
+	at ✽.navigate to URL "https://ecommerce-playground.lambdatest.io/"(file:///H:/Prasanth/IdeaProjects/PlaywrightSimpleProject/PlaywrightProject/src/test/resources/features/register.feature:13)
+
+Register Feature.To perform successful registration for the user -- Time elapsed: 0 s <<< ERROR!
+com.microsoft.playwright.PlaywrightException: Playwright connection closed
+	at com.microsoft.playwright.impl.PipeTransport.send(PipeTransport.java:50)
+	at com.microsoft.playwright.impl.Connection.internalSendMessage(Connection.java:171)
+	at com.microsoft.playwright.impl.Connection.sendMessageAsync(Connection.java:135)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.PageImpl.screenshotImpl(PageImpl.java:1207)
+	at com.microsoft.playwright.impl.PageImpl.screenshot(PageImpl.java:1162)
+	at com.microsoft.playwright.Page.screenshot(Page.java:6756)
+	at StepDefs.DriverInstansiation.takeScreenshot(DriverInstansiation.java:57)
+	at StepDefs.CucumberHooks.afterStep(CucumberHooks.java:31)
+
+Register Feature.To perform successful registration for the user -- Time elapsed: 0 s <<< ERROR!
+com.microsoft.playwright.PlaywrightException: Playwright connection closed
+	at com.microsoft.playwright.impl.PipeTransport.send(PipeTransport.java:50)
+	at com.microsoft.playwright.impl.Connection.internalSendMessage(Connection.java:171)
+	at com.microsoft.playwright.impl.Connection.sendMessageAsync(Connection.java:135)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.PageImpl.screenshotImpl(PageImpl.java:1207)
+	at com.microsoft.playwright.impl.PageImpl.screenshot(PageImpl.java:1162)
+	at StepDefs.DriverInstansiation.takeFullPageScreenshot(DriverInstansiation.java:62)
+	at StepDefs.CucumberHooks.teardown(CucumberHooks.java:40)
+

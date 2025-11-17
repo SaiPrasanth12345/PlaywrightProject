@@ -1,0 +1,43 @@
+-------------------------------------------------------------------------------
+Test set: Login Feature
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 2, Skipped: 0, Time elapsed: 65.20 s <<< FAILURE! -- in Login Feature
+Login Feature.To perform successful login for the user #1 -- Time elapsed: 47.77 s <<< ERROR!
+com.microsoft.playwright.PlaywrightException: Object doesn't exist: request@fd0242b3a604da5da3af5bd03e235509
+	at com.microsoft.playwright.impl.Connection.getExistingObject(Connection.java:195)
+	at com.microsoft.playwright.impl.BrowserContextImpl.handleEvent(BrowserContextImpl.java:744)
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:295)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.navigateImpl(FrameImpl.java:419)
+	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:930)
+	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:43)
+	at com.microsoft.playwright.Page.navigate(Page.java:5491)
+	at Commom.HeaderSection.launchURL(HeaderSection.java:20)
+	at StepDefs.StepDefinitions.navigate_to_url(StepDefinitions.java:31)
+	at ✽.navigate to URL "https://ecommerce-playground.lambdatest.io/"(file:///H:/Prasanth/IdeaProjects/PlaywrightSimpleProject/PlaywrightProject/src/test/resources/features/login.feature:6)
+
+Login Feature.To perform successful login for the user #1 -- Time elapsed: 0 s <<< ERROR!
+com.microsoft.playwright.PlaywrightException: Object doesn't exist: request@d0cbf5e9f659e1d687272893b5b6fefc
+	at com.microsoft.playwright.impl.Connection.getExistingObject(Connection.java:195)
+	at com.microsoft.playwright.impl.BrowserContextImpl.handleEvent(BrowserContextImpl.java:744)
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:295)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.PageImpl.screenshotImpl(PageImpl.java:1207)
+	at com.microsoft.playwright.impl.PageImpl.screenshot(PageImpl.java:1162)
+	at com.microsoft.playwright.Page.screenshot(Page.java:6756)
+	at StepDefs.DriverInstansiation.takeScreenshot(DriverInstansiation.java:57)
+	at StepDefs.CucumberHooks.afterStep(CucumberHooks.java:31)
+
+Login Feature.To perform successful login for the user #2 -- Time elapsed: 17.43 s <<< FAILURE!
+java.lang.AssertionError: My Account Page is displayed
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at StepDefs.StepDefinitions.the_user_should_get_navigaetd_to_my_account_page(StepDefinitions.java:88)
+	at ✽.the user should get navigaetd to MyAccount Page(file:///H:/Prasanth/IdeaProjects/PlaywrightSimpleProject/PlaywrightProject/src/test/resources/features/login.feature:9)
+
